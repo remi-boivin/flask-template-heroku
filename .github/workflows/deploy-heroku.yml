@@ -19,7 +19,7 @@ jobs:
           # Email that you use with heroku
           heroku_email: remi50avJ.C@live.fr
           # The appname to use for deploying/updating
-          heroku_app_name: ${{ secrets.HEROKU_APP }}
+          heroku_app_name: ${{ GITHUB.secrets.HEROKU_APP }}
           # branch: master
           # usedocker: # optional, default is false
           # Type of heroku process (web, worker, etc). This option only makes sense when usedocker enabled
