@@ -15,11 +15,11 @@ jobs:
       uses: AkhileshNS/heroku-deploy@v3.12.12
       with:
           # This will be used for authentication. You can find it in your heroku homepage account settings
-          heroku_api_key: ${{ GITHUB.secrets.HEROKU_API_KEY }}
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           # Email that you use with heroku
           heroku_email: remi50avJ.C@live.fr
           # The appname to use for deploying/updating
-          heroku_app_name: ${{ GITHUB.secrets.HEROKU_APP }}
+          heroku_app_name: ${{ secrets.HEROKU_APP }}
           # branch: master
           # usedocker: # optional, default is false
           # Type of heroku process (web, worker, etc). This option only makes sense when usedocker enabled
